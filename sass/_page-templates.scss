@@ -1,6 +1,43 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body {
+    background-color: #222222;
+    background-size: cover;
+    color: #fff;
+    font-family: Exo Web,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.hfeed {
+    
+    align-content: center;
+    text-align: center;
+    border: solid red 5px;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
+
+    }
+#new-quote-button,
+.menu-toggle {
+    border: #00cc00 solid 5px;
+    background-color: black;
+    color:#00cc00;
+    }
+.logo {
+        align-content: center;
+        border: white solid 1px;
+}
+
+img {
+    border: purple solid 5px;
+
+}
+
 
 /* All Archives Page */
 

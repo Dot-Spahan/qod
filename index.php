@@ -4,6 +4,9 @@
  *
  * @package QOD_Starter_Theme
  */
+
+
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -26,5 +29,4 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
