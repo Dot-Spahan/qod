@@ -2,12 +2,35 @@
 # Page Templates
 --------------------------------------------------------------*/
 body {
+    font-family: "Exo",sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 1.5;
     background-color: #222222;
     background-size: cover;
     color: #fff;
-    font-family: Exo Web,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+
+    .footer-navigation li {
+        border-right: 1px solid #fff;
+        line-height: 1;
+        padding: 0 1rem; 
+        font-size: 1rem;   
+        display: block;
+        color: #00cc00;
+        align-content: space-between;
+      
+    }
+    .site-info {
+        border-right: 1px solid #fff;
+        line-height: 1;
+        font-size: 1rem;
+        padding: 0 1rem;    
+        display: block;
+        color: #00cc00;
+        align-content: space-between;
+        float: right;
+    }
+    
 }
 
 .hfeed {
@@ -40,5 +63,6 @@ img {
 
 
 /* All Archives Page */
+
 
 /* Submit a Quote Page */

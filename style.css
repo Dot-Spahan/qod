@@ -221,6 +221,30 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Light.woff2") format("woff2"), url("../../fonts/Exo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Medium.woff2") format("woff2"), url("../../fonts/Exo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-LightItalic.woff2") format("woff2"), url("../../fonts/Exo-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../fonts/Exo-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -230,7 +254,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo Web", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -411,11 +435,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: white; }
+  color: #00cc00; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: green; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -428,6 +452,7 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
+    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -548,6 +573,28 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.site-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; }
+  .site-content:before {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    font-size: 10rem;
+    float: left; }
+  .site-content:after {
+    font-family: "FontAwesome";
+    content: "\f10e";
+    font-size: 10rem;
+    float: right; }
+  .site-content #primary .browse-archives {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-line-pack: left;
+        align-content: left;
+    text-align: justify;
+    border: solid pink 5px; }
+
 .sticky {
   display: block; }
 
@@ -591,12 +638,32 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 body {
+  font-family: "Exo",sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 1.5;
   background-color: #222222;
   background-size: cover;
-  color: #fff;
-  font-family: Exo Web,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5; }
+  color: #fff; }
+  body .footer-navigation li {
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding: 0 1rem;
+    font-size: 1rem;
+    display: block;
+    color: #00cc00;
+    -ms-flex-line-pack: justify;
+        align-content: space-between; }
+  body .site-info {
+    border-right: 1px solid #fff;
+    line-height: 1;
+    font-size: 1rem;
+    padding: 0 1rem;
+    display: block;
+    color: #00cc00;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    float: right; }
 
 .hfeed {
   -ms-flex-line-pack: center;

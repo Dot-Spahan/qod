@@ -4,6 +4,36 @@
 
 /* Posts and pages */
 
+.site-content {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	
+	&:before{
+		font-family: "FontAwesome";
+  		content: "\f10d";
+		font-size: 10rem;
+		float: left;
+	}
+	&:after{
+		font-family: "FontAwesome";
+  		content: "\f10e";
+		font-size: 10rem;
+		float: right;
+	}
+	#primary {
+        .browse-archives {
+        
+            display: block;
+            box-sizing: border-box;
+            align-content: left;
+            text-align: justify;
+            border: solid pink 5px;
+            }
+    
+    
+   }
+}
+
 .sticky {
 	display: block;
 }
