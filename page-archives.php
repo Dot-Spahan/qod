@@ -41,7 +41,11 @@ get_header(); ?>
                   'largest' => 1,
                   'unit' => 'rem',
                   'format' => 'list'
-               ) ); ?>
+               ) ); 
+               
+           
+               ?>
+               <a href="<?php echo esc_url( 'https://quotesondesign.com//' ); ?>"><?php printf( esc_html( 'This site is heavily inspired by Chris Coyier’s' ), ' Quotes on Design' ); ?></a>
             </div>
          </section>
 
