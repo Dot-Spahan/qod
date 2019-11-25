@@ -2,62 +2,103 @@
 # Page Templates
 --------------------------------------------------------------*/
 body {
+    max-width: 1080px;
     font-family: "Exo",sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
+    font-weight: 150;
+    font-size: 16px;
     line-height: 1.5;
     background-color: #222222;
     background-size: cover;
     color: #fff;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+
+    #colophon {
+        .site-footer-nav{
+            //display: block;
+            font-size: 16px;
+        }
+
+    .footer-navigation {
+        padding:20px;
+        align-content: space-between;
 
     .footer-navigation li {
         border-right: 1px solid #fff;
         line-height: 1;
         padding: 0 1rem; 
-        font-size: 1rem;   
+        font-size: 16px;   
         display: block;
         color: #00cc00;
-        align-content: space-between;
+        align-content: space-around;
+
       
     }
+}
     .site-info {
-        border-right: 1px solid #fff;
-        line-height: 1;
+        
+        line-height: 1.5;
         font-size: 1rem;
         padding: 0 1rem;    
-        display: block;
         color: #00cc00;
-        align-content: space-between;
-        float: right;
     }
-    
+    }
 }
 
 .hfeed {
-    
+    font-family: "Exo",sans-serif;
+    font-size: 16px;
+    font-weight: 100;
     align-content: center;
     text-align: center;
-    border: solid red 5px;
-    padding: 50px;
+    //border: solid red 5px;
+    padding: 10px;
     margin: 0 auto;
     max-width: 1080px;
-    padding: 2.5%;
-    width: 100%;
+    width: 85%;
+    
+   
+ }
+    .browse-archives {
+ 
+        width: auto;
+        height: auto;
+        margin: auto 0;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+        //border: solid pink 5px;
 
-    }
-#new-quote-button,
-.menu-toggle {
-    border: #00cc00 solid 5px;
-    background-color: black;
+        
+                }
+   
+
+    
+#new-quote-button
+ {
+    border: #00cc00 solid 2px;
+    background-color: #222;
     color:#00cc00;
+    padding: 13px;
+    border-radius: 1px;
+    width: 50%;
+    height: 2em;
+    font-size: 16px;
+    text-align: center;
     }
 .logo {
         align-content: center;
-        border: white solid 1px;
+        //border: white solid 1px;
+        padding: 10px;
 }
 
 img {
-    border: purple solid 5px;
+    //border: purple solid 5px;
+    padding: 10px;
+    height: 100%;
+    width: auto;
+    
 
 }
 

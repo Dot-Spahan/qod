@@ -5,33 +5,30 @@
 /* Posts and pages */
 
 .site-content {
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+	position: relative;
 	
 	&:before{
 		font-family: "FontAwesome";
   		content: "\f10d";
-		font-size: 10rem;
-		float: left;
+		font-size: 9rem;
+		position: absolute;
+		top:0;
+		left: -175px
+		
+		
+		
 	}
 	&:after{
 		font-family: "FontAwesome";
   		content: "\f10e";
-		font-size: 10rem;
-		float: right;
+		font-size: 9rem;
+		position: absolute;
+		top:0;
+		right: -175px;
+		
 	}
-	#primary {
-        .browse-archives {
-        
-            display: block;
-            box-sizing: border-box;
-            align-content: left;
-            text-align: justify;
-            border: solid pink 5px;
-            }
-    
-    
-   }
+	
+
 }
 
 .sticky {

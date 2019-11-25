@@ -38,10 +38,18 @@ hr {
 ul,
 ol {
   margin: 0 0 $base__space-unit ($base__space-unit * 2);
+  
 }
 
 ul {
-  list-style: disc;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  text-align: center;
 }
 
 ol {
@@ -52,6 +60,14 @@ li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: $base__space-unit;
+}
+li {
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+
 }
 
 dt {

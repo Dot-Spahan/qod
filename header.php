@@ -19,6 +19,7 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
+			
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 			
 		<div id="logo" class="logo">
@@ -36,3 +37,4 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+			
